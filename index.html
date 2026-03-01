@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ghost Stack Protocols</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <header class="top">
+      <div class="mark">
+        <div class="sigil" aria-hidden="true"></div>
+        <div class="brand">
+          <div class="title">GHOST STACK</div>
+          <div class="subtitle">PROTOCOLS</div>
+        </div>
+      </div>
+
+      <div class="status">
+        <span class="dot" id="statusDot"></span>
+        <span class="statusText" id="statusText">SEALED</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Access is a privilege.</h1>
+      <p class="lead">
+        Minimal surface. Maximum intent. Enter credentials to reveal the stack.
+      </p>
+
+      <div class="panel">
+        <div class="panelHead">
+          <div class="panelTitle">CREDENTIAL CHECK</div>
+          <div class="panelHint">Local unlock only</div>
+        </div>
+
+        <form id="authForm" class="auth" autocomplete="off">
+          <label>
+            <span>Operator ID</span>
+            <input id="opId" type="text" placeholder="e.g. GOODY" required />
+          </label>
+
+          <label>
+            <span>Keyphrase</span>
+            <input id="keyphrase" type="password" placeholder="••••••••" required />
+          </label>
+
+          <div class="row">
+            <button class="btn primary" type="submit">UNSEAL</button>
+            <button class="btn ghost" type="button" id="lockBtn">RE-SEAL</button>
+          </div>
+
+          <div class="msg" id="msg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="tools">
+      <div class="toolsHead">
+        <div class="toolsTitle">TOOL ACCESS</div>
+        <div class="toolsNote">Requires valid credentials</div>
+      </div>
+
+      <div class="grid">
+        <a class="tool locked" id="t1" href="#" data-tool="Spectre69">
+          <div class="toolTop">
+            <div class="toolName">Spectre69</div>
+            <div class="badge">LOCKED</div>
+          </div>
+          <div class="toolDesc">Recon / signal extraction layer.</div>
+        </a>
+
+        <a class="tool locked" id="t2" href="#" data-tool="EvilTacos">
+          <div class="toolTop">
+            <div class="toolName">EvilTacos</div>
+            <div class="badge">LOCKED</div>
+          </div>
+          <div class="toolDesc">Latency-free ops utilities.</div>
+        </a>
+
+        <a class="tool locked" id="t3" href="#" data-tool="DarkForge-X">
+          <div class="toolTop">
+            <div class="toolName">DarkForge-X</div>
+            <div class="badge">LOCKED</div>
+          </div>
+          <div class="toolDesc">Build / deploy / harden chain.</div>
+        </a>
+
+        <a class="tool locked" id="t4" href="#" data-tool="GravePoint-Directive">
+          <div class="toolTop">
+            <div class="toolName">GravePoint-Directive</div>
+            <div class="badge">LOCKED</div>
+          </div>
+          <div class="toolDesc">Ruleset enforcement & audit trails.</div>
+        </a>
+      </div>
+
+      <div class="footnote">
+        <span class="mono">NOTE:</span> Unlock only reveals links. Protect the real endpoints server-side.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="mono">© Ghost Stack Protocols</div>
+      <div class="mono faint">minimal • refined • exclusive</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

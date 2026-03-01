@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/tools/spectre69", "destination": "/tools/spectre69.html" },
+    { "source": "/tools/eviltacos", "destination": "/tools/eviltacos.html" },
+    { "source": "/tools/darkforge-x", "destination": "/tools/darkforge-x.html" },
+    { "source": "/tools/gravepoint-directive", "destination": "/tools/gravepoint-directive.html" }
+  ]
+}
